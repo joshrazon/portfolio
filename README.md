@@ -1,6 +1,6 @@
 # Source for my portfolio [site](http://razon-josh.me/)
 
-Responsive portfolio site designed and developed by me
+Responsive portfolio site designed and developed by *Joshua Razon*
 
 Project [Link](http://razon-josh.me)
 
