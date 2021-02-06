@@ -124,7 +124,7 @@ header {
   letter-spacing: 6px;
   font-weight: 700;
   font-size: 1.5em;
-  height: 90vh;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -135,7 +135,6 @@ header {
   height: 290px;
   width: 480px;
   background-color: blanchedalmond;
-  margin: 2em;
   display: flex;
   border-radius: 4px;
 }
@@ -162,15 +161,34 @@ header {
   background-image: url('./img/bakery-thumb-min.jpg');
 }
 .item-4 {
-  background-image: url('./img/todo-thumb-min.jpg');
+  background-image: url('./img/weather-bg.JPG');
 }
 
 .showcase {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 70%;
   margin-top: 1em;
+}
+
+.item {
+  margin: 2em;
+}
+
+.showcase-link {
+  display: flex;
+  justify-content: space-evenly;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: .8em;
+}
+
+.showcase-link a {
+  padding: 10px 15px;
+  border: 1px solid white;
 }
 
 /* About */
@@ -206,14 +224,17 @@ header {
   text-align: center;
   font-size: 1.5em;
   letter-spacing: 6px;
-  margin: auto;
-  height: 75vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 50%;
+  height: 75vh;
 }
 
 .about-info {
   display: flex;
-  margin-top: 5em;
   justify-content: space-around;
 }
 
@@ -221,6 +242,10 @@ header {
   text-align: left;
   padding: 30px;
   margin-top: 1em;
+}
+
+.about-test p .site {
+  color: #00adb5;
 }
 
 .about-test h3 {
@@ -449,10 +474,15 @@ footer i:hover {
     height: auto;
     margin: 0;
     width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .about-2 h2 {
+    margin-bottom: 1.8em;
   }
 
   .about-info {
-    margin-top: 2em;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
