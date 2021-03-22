@@ -1,5 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* vars */
+:root {
+  --dark-bg: black;
+  --dark-font: #fff;
+  --dark-accent: #00adb5;
+  --light-bg: #a8d8ea;
+  --light-font: black;
+  --light-accent: rebeccapurple;
+}
 
 /* resets */
 * {
@@ -337,13 +346,25 @@ footer {
   background-color: rgb(8, 8, 8);
   padding: 15px;
 }
-footer h4 {
-  color: #00adb5;
+
+footer i {
+  font-size: 22px;
 }
 
-footer p {
+footer p.copyright {
+  color: #00adb5;
   padding: 15px;
+}
+
+footer p em {
   color: #c4c4c4;
+}
+
+footer div.footer-links {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
 }
 
 footer span {
@@ -358,6 +379,9 @@ footer a:active,
 footer a:visited {
   color: #00adb5;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
 }
 footer i {
   transition: all .3s;
@@ -367,7 +391,6 @@ footer i {
 footer i:hover {
   transform: scale(1.2);
 }
-
 
 @media screen and (max-width: 1200px) {
   * {
